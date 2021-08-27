@@ -24,8 +24,8 @@ class UnetDataset(Dataset):
 
     def __getitem__(self, index):
 
-        img = Image.open(self.img_path+"/"+os.listdir(self.img_path)[index])
-        mask = Image.open(self.mask_path+"/"+os.listdir(self.mask_path)[index])
+        img = Image.open(self.img_path+"/"+os.listdir(self.img_path)[index])#edit this to fit ur way of opennin' image!
+        mask = Image.open(self.mask_path+"/"+os.listdir(self.mask_path)[index]))#edit this to fit ur way of opennin' image!
         #img = torchvision.io.read_image(self.img_path+"/"+os.listdir(self.img_path)[index])
         #image = torchvision.io.decode_png(image)
         
